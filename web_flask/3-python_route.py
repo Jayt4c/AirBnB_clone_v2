@@ -35,7 +35,7 @@ def c_with_params(text):
 @app.route('/python/<text>', strict_slashes=False)
 def python_with_text_params(text):
     """
-
+        display “Python ”, followed by the value of the text variable (replace underscore _ symbols with a space )
     """
     text_no_underscore = text.replace('_', ' ')
     return "python{}".format(text_no_underscore)
